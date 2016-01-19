@@ -1,0 +1,22 @@
+<ion-view view-title="discover">
+  <ion-content>
+
+  <div class="item item-input-inset" >
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Email">
+    </label>
+    <button class="button button-small">
+      Submit
+    </button>
+
+</div>
+<ul class="list">
+  <li  ng-repeat="category in categorys " ng-style="'{{category.url}}' != '' && {'background-image':'url({{category.url}})'}"
+   style="height: 150px;color:#fff;margin:0 auto;" class="item">
+    <b style="top:50%;"> {{category.title}}</b>
+  </li>
+</ul>
+
+  </ion-content>
+ 
+</ion-view>
