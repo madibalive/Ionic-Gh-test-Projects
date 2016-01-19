@@ -1,22 +1,52 @@
 <ion-view view-title="discover">
-  <ion-content>
-
-  <div class="item item-input-inset" >
-    <label class="item-input-wrapper">
-      <input type="text" placeholder="Email">
-    </label>
-    <button class="button button-small">
-      Submit
-    </button>
-
+    
+    <div class="bar bar-subheader item-input-inset bar-porcelain">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input style="background-color:#fff" type="search" placeholder="Search">
+  </label>
+  <button class="button ion-android-search button-clear">
+    
+  </button>
 </div>
-<ul class="list">
-  <li  ng-repeat="category in categorys " ng-style="'{{category.url}}' != '' && {'background-image':'url({{category.url}})'}"
-   style="height: 150px;color:#fff;margin:0 auto;" class="item">
-    <b style="top:50%;"> {{category.title}}</b>
-  </li>
-</ul>
+    <ion-content class="has-subheader">
 
-  </ion-content>
- 
+
+        <div id="discover-content">
+            <ul class="list">
+                <li ng-repeat="category in categorys " ng-style="'{{category.url}}' != '' && {'background-image':'url({{category.url}})'}"
+                style="height: 150px;color:#fff;margin:0 auto;" class="item">
+                    <b style="background-color:black;color:white;padding:5px;position:absolute;bottom:0;right;"> {{category.title}}</b>
+                </li>
+            </ul>
+        </div>
+
+        <div id="search-content">
+            <ion-list>
+                <ion-item class="item-thumbnail-left" style="padding:16px 16px  16px 110px">
+                    <img src="http://lorempixel.com/people/80/80/" style="border-radius:20%;" alt="">
+                    <h2> title here <span style="float:right;background-color:light-blue;padding:5px;font-size:1.8em;"> <i class="icon positive ion-ios-checkmark"></i></span></h2>
+                    <p>
+                        <i class="icon ion-ios-people"> 2</i> <i class="icon ion-ios-people"> 2</i>
+                    </p>
+                </ion-item>
+                <ion-item class="item-thumbnail-left" style="padding:16px 16px  16px 110px">
+                    <img src="http://lorempixel.com/people/80/80/" style="border-radius:20%;" alt="">
+                    <h2> title here <span style="float:right;background-color:light-blue;padding:5px;font-size:1.8em;"> <i class="icon positive ion-ios-checkmark"></i></span></h2>
+                    <p>
+                        <i class="icon ion-ios-people"> 2</i> <i class="icon ion-ios-people"> 2</i>
+                    </p>
+                </ion-item>
+                <ion-item class="item-thumbnail-left" style="padding:16px 16px  16px 110px">
+                    <img src="http://lorempixel.com/people/80/80/" style="border-radius:20%;" alt="">
+                    <h2> title here <span style="float:right;background-color:light-blue;padding:5px;font-size:1.8em;"> <i class="icon positive ion-ios-checkmark"></i></span></h2>
+                    <p>
+                        <i class="icon ion-ios-people"> 2</i> <i class="icon ion-ios-people"> 2</i>
+                    </p>
+                </ion-item>
+            </ion-list>
+        </div>
+
+    </ion-content>
+
 </ion-view>

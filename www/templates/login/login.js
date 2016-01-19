@@ -1,7 +1,13 @@
 angular.module('projectM')
-.controller('LoginCtrl',  function ($scope) {
-	
-})
-.service('loginService', function () {
-	
-});
+.controller('LoginCtrl',loginFunction  )
+.service('loginService',serviceFunction);
+
+function loginFunction ($scope,$state) {
+	$scope.onLogin = function(){
+        $state.go('app.home');
+    }
+}
+
+function serviceFunction() {
+    
+}
