@@ -1,22 +1,21 @@
 <ion-view view-title="discover">
-    
+
     <div class="bar bar-subheader item-input-inset bar-porcelain">
-  <label class="item-input-wrapper">
-    <i class="icon ion-ios-search placeholder-icon"></i>
-    <input style="background-color:#fff" type="search" placeholder="Search">
-  </label>
-  <button class="button ion-android-search button-clear">
-    
-  </button>
-</div>
+        <label class="item-input-wrapper" style="padding-left:1px;border-radius:5px;">
+            <input style="background-color:#fff" type="search" placeholder="Search">
+        </label>
+        <button class="button button-icon  ion-android-search button-clear" style="margin-left:0;">
+
+        </button>
+    </div>
     <ion-content class="has-subheader">
 
 
         <div id="discover-content">
             <ul class="list">
                 <li ng-repeat="category in categorys " ng-style="'{{category.url}}' != '' && {'background-image':'url({{category.url}})'}"
-                style="height: 150px;color:#fff;margin:0 auto;" class="item">
-                    <b style="background-color:black;color:white;padding:5px;position:absolute;bottom:0;right;"> {{category.title}}</b>
+                style="height: 140px;color:#fff;margin:0 auto;" class="item">
+                    <b style="background-color:black;color:white;padding:5px;position:absolute;bottom:10px;;"> {{category.title}}</b>
                 </li>
             </ul>
         </div>
@@ -32,7 +31,7 @@
                 </ion-item>
                 <ion-item class="item-thumbnail-left" style="padding:16px 16px  16px 110px">
                     <img src="http://lorempixel.com/people/80/80/" style="border-radius:20%;" alt="">
-                    <h2> title here <span style="float:right;background-color:light-blue;padding:5px;font-size:1.8em;"> <i class="icon positive ion-ios-checkmark"></i></span></h2>
+                    <h2> title here <span style="float:right;background-color:light-blue;padding:5px;font-size:1.8em;"> <i class="icon positive ion-ios-checkmark-outline"></i></span></h2>
                     <p>
                         <i class="icon ion-ios-people"> 2</i> <i class="icon ion-ios-people"> 2</i>
                     </p>
